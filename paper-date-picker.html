@@ -88,7 +88,7 @@ styling:
 
       /** Narrow *********************/
       :host([narrow]) #datePicker {
-        width: 240px;
+        width: 235px;
         height: 428px;
         @apply(--layout-vertical);
       }
@@ -116,6 +116,9 @@ styling:
         font-weight: bold;
         margin-top: 2px;
         @apply(--paper-date-picker-heading-date);
+        @media screen and (min-width: 599px) {
+          font-size: 20px;
+        }
       }
       #heading div.date {
         letter-spacing: 0.025em;
